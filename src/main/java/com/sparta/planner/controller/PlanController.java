@@ -23,7 +23,7 @@ public class PlanController {
         return planService.createPlan(requestDto);
     }
 
-    //선택한 일정 정보 조회 (response 정보에 비밀번호 제외 = 내용) //id로 조회하자
+    //선택한 일정 정보 조회 (response 정보에 비밀번호 제외 = 내용)
     // 수정, 삭제시 선택한 일정의 비밀번호와 요청할 때 함께 보낸 비밀번호가 일치할 경우에만 가능합니다.
     @ExceptionHandler
     @GetMapping("plans/{id}")
